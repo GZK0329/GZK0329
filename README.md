@@ -6,7 +6,7 @@
 
 [2.进程相关](#jump2)
 
-[3.jackson配置相关](#jump3)
+[3.retrofit相关](#jump3)
 
 ***
 
@@ -29,8 +29,4 @@
 
 ***
 
-## 3.jackson配置与swagger结合
-
-```xml
-
-```
+## 3.retrofit相关
