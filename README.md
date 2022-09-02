@@ -87,12 +87,16 @@ public class PropertyUtil {
      * @return
      */
     public static Object getProperty(Object obj, String propertyName) {
-        Class<?> clazz = obj.getClass();//获取对象的类型
-        PropertyDescriptor pd = getPropertyDescriptor(clazz, propertyName);//获取 clazz 类型中的 propertyName 的属性描述器
-        Method getMethod = pd.getReadMethod();//从属性描述器中获取 get 方法
+        //获取对象的类型
+        Class<?> clazz = obj.getClass();
+        //获取 clazz 类型中的 propertyName 的属性描述器
+        PropertyDescriptor pd = getPropertyDescriptor(clazz, propertyName);
+        //从属性描述器中获取 get 方法
+        Method getMethod = pd.getReadMethod();
         Object value = null;
         try {
-            value = getMethod.invoke(obj, new Object[]{});//调用方法获取方法的返回值
+            //调用方法获取方法的返回值
+            value = getMethod.invoke(obj, new Object[]{});
         } catch (Exception e) {
             e.printStackTrace();
         }
