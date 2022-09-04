@@ -14,6 +14,38 @@
 
 ***
 <span id="jump1"></span>
+## 1.List接口
+
+### 1.1 ArrayList接口
+ArrayList的继承实现关系如下图所示:
+![](https://static-pic-github-personal.oss-cn-shanghai.aliyuncs.com/github-personal-learning/List/ArrayList-1.png)
+ArrayList接口实现了Serializable、Cloneable、RandomAccess、List接口，继承了AbstractList抽象类。
+
+| 接口   |    功能  | 
+| :----  | :---- | 
+| Cloneable  | 重写clone()方法，即ArrayList支持深拷贝
+| RandomAccess  | 随机读取，ArrayList支持随机读取列表中元素 |
+| AbstractList  | 继承抽象类AbstractList中的公共方法，重写了crud方法| 
+
+#### 1.1.1扩容机制？
+
+
+#### 1.1.2是不是线程安全？
+
+#### 1.1.3 拷贝机制？
+
+#### 1.1.4 序列化？
+
+#### 1.1.5 一些实用的API
+
+subList()
+
+spliterator()
+
+retainAll()
+
+### 1.2 LinkedList接口
+
 
 ***
 
